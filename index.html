@@ -18,7 +18,7 @@
     <form>
         <p>Bill 💰</p>
         <span>€
-        <input type="text" placeholder="Bill" id="bill">
+        <input type="number" placeholder="Bill" id="bill" step=".01">
         </span>
         <p>Number of people 😎</p>
         <span><input type="text" placeholder="How many people?" id="people"></span>
@@ -28,11 +28,11 @@
         <button id="addTip">Add a tip!</button>
         
         <select id="tip">
-            <option disabled selected>Select an option👇</option>
+            <option disabled>Select an option👇</option>
             <option value="0.30">Excellent service! 30%💖</option>
             <option value="0.20">Good service! 20%💙</option>
             <option value="0.10">It was OK! 10%😇</option>
-            <option value="0.00">No tip.❌</option>
+            <option selected value="0.00">No tip.❌</option>
         </select>
 
         <button id="btn">Calculate</button>

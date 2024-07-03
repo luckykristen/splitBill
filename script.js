@@ -15,7 +15,7 @@ function calculateAmount(e) {
     const people = document.querySelector("#people").value;
     const tip = document.querySelector("#tip").value;
 
-        if (bill ==="" || people ==="" || people < 1 ) {
+        if (bill ==="" || people ==="" || people < 1) {
             Swal.fire({
                 icon: "error",
                 title: "Error",
@@ -34,4 +34,5 @@ function calculateAmount(e) {
     document.querySelector("#dividedBill").textContent = amountPerPerson;
     document.querySelector("#dividedTip").textContent = tipPerPerson;
     document.querySelector("#billAndTip").textContent = totalSum;
+
 }

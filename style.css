@@ -143,6 +143,7 @@ button:hover {
 @media all and (max-width: 500px) {
     .container {
         width: 465px;
+        height: 900px;
         
     }
     body {
