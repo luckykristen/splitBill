@@ -1,0 +1,151 @@
+body {
+    background-image: url(bg_photo_bill.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(172, 75, 75);
+}
+
+.container {
+    background-color: rgba(94, 97, 93, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 700px;
+    border-radius: 40px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    align-self: center;
+    color: #eea7dc;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 5px;
+}
+
+#addTip {
+    background-color: #78DEC7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#btn {
+    background-color: #ce8abd;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+select {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 200px;
+    background-color: hsl(24, 100%, 86%);
+    align-self: flex-start;
+    padding: 5px;
+}
+
+#tip {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: none;
+}
+
+#showTotalAmontToPay {
+    display: flex;
+}
+
+#billSplit, #totalTip, #totalAmount {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #74e291c9;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #b7539e;
+    transition-duration: 2s;
+}
+
+#addTip:hover {
+    background-color: #1679AB;
+    transition-duration: 2s;
+}
+
+@media all and (max-width: 1000px) {
+    body {
+        height: 1165px;
+    }
+
+    .container {
+        width: 790px;
+    }
+
+    #showTotalAmontToPay {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 800px) {
+    body {
+        height: 1020px;
+    }
+
+    .container {
+        width: 750px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        width: 465px;
+        
+    }
+    body {
+        height: 1030px;
+    }
+}
